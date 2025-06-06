@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Build tools
+.cache/
+parcel-cache/
+.next/
+out/
