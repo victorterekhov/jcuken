@@ -1,0 +1,137 @@
+   html,
+   body {
+     height: 100%;
+     margin: 0;
+   }
+
+   body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     font-family: monospace;
+     background: #f8f8f8;
+     color: #000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+   }
+
+   .container {
+     border: 3px solid black;
+     padding: 2rem;
+     width: 400px;
+     max-width: 90%;
+     text-align: left;
+     box-shadow: 8px 8px 0 #000;
+   }
+
+   h1 {
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+   }
+
+   input,
+   select,
+   button {
+     font-family: monospace;
+     font-size: 1rem;
+     width: 100%;
+     padding: 0.5rem;
+     margin-bottom: 1rem;
+     border: 2px solid black;
+     background: #eee;
+     box-sizing: border-box;
+   }
+
+   button {
+     cursor: pointer;
+     background: #f8f8f8;
+     font-weight: bold;
+   }
+
+   .result {
+     margin-top: 1rem;
+     padding: 1rem;
+     border: 2px dashed black;
+     background: #f8f8f8;
+   }
+
+   .result-row {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 1rem;
+   }
+
+   #resultText {
+     flex: 1;
+     white-space: pre-wrap;
+     word-break: break-word;
+     overflow-wrap: break-word;
+   }
+
+   .copy-btn {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 36px;
+     height: 36px;
+     margin-bottom: 0;
+     padding: 0;
+     border: 2px solid black;
+     background: #f8f8f8;
+     cursor: pointer;
+     flex-shrink: 0;
+     overflow: visible;
+   }
+
+   .copy-btn:hover svg {
+     stroke: #f8f8f8;
+     background: black;
+   }
+
+   .copy-btn:hover {
+     background: black;
+   }
+
+   .tooltip {
+     position: absolute;
+     top: -30px;
+     right: 50%;
+     transform: translateX(50%);
+     background: black;
+     color: #f8f8f8;
+     font-size: 12px;
+     padding: 3px 6px;
+     border: 1px solid black;
+     white-space: nowrap;
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.2s ease-in-out;
+   }
+
+   .tooltip.show {
+     opacity: 1;
+   }
+
+   #app-container {
+     margin: auto;
+     /* centers it horizontally and vertically */
+     /* if you have width or max-width, keep them */
+     flex-shrink: 0;
+     /* prevent shrinking if needed */
+   }
+
+   footer {
+     flex-shrink: 0;
+     margin-top: auto;
+     /* pushes footer down */
+     width: 100%;
+     text-align: center;
+     padding: 1rem;
+     border-top: 2px solid black;
+     font-family: monospace;
+     font-size: 0.9rem;
+   }
